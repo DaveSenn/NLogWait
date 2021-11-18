@@ -46,7 +46,7 @@ namespace NLogWait
             await Task.WhenAll( _tasks );
         }
 
-        private async Task V3( CancellationToken stoppingToken )
+        private void V3( CancellationToken stoppingToken )
         {
             for ( var i = 0; i < 100; i++ )
             {
@@ -58,8 +58,6 @@ namespace NLogWait
                 t.Start();
                 _threads.Add( t );
             }
-
-            await Task.WhenAll( _tasks );
         }
     }
 }
