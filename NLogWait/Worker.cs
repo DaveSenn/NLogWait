@@ -21,7 +21,7 @@ namespace NLogWait
         protected override async Task ExecuteAsync( CancellationToken stoppingToken )
         {
             //await V2( stoppingToken );
-            await V3( stoppingToken );
+            //V3( stoppingToken );
 
             Parallel.For( 0,
                           100,
